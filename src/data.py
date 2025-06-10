@@ -9,4 +9,7 @@ def clean_data(df):
     X = df.drop(columns=['Price','Property Title','Cellar','Beds','Terrace']) 
     X['Living'] = X['Living'].str.replace(' m²', '', regex=False).astype(float) 
     y = y.str.replace(r'[^\d.]', '', regex=True)
+    X.to_csv('data/processed/X.csv')
+    y.to_csv('data/processed/y.csv')
+
     return X,y
