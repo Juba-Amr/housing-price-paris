@@ -16,7 +16,14 @@ st.set_page_config(
 
 st.title(r"Houses's Selling Price Prediction")
 
-st.write("Enter all important informations about your property to get an estimation of the selling price")
+st.markdown(
+    """
+    <h2 style='text-align: center; color: #4B8BBE; font-size: 28px;'>
+        🏡 Enter all important information about your property in Paris to estimate its selling price
+    </h2>
+    """,
+    unsafe_allow_html=True
+)
 with st.form(key='house_data'):
     rooms = st.number_input("Number of Rooms", min_value=1)
     floor = st.selectbox("Number of Floors", [1, 2, 3])
