@@ -8,47 +8,33 @@ Description
 This project is an interactive web app built with Streamlit that predicts housing sale prices in Paris.
 The goal is to provide quick and reliable price estimates based on real data, using a complete machine learning pipeline.
 
-Features
-Loading and cleaning raw data
+Features:
 
-Building a preprocessing and modeling pipeline with scikit-learn (version 1.7)
+-Loading and cleaning raw data
+-Building a preprocessing and modeling pipeline with scikit-learn (version 1.7)
+-Predicting sale prices from property features
+-Simple, intuitive user interface for easy model testing
+-Handling versioning and error issues (retrained with sklearn 1.7)
+Technologies Used:
 
-Predicting sale prices from property features
+-Python 3.12
+-pandas, matplotlib
+-scikit-learn (1.7)
+-xgboost
+-joblib (for model serialization)
+-Streamlit (for interactive web deployment)
 
-Simple, intuitive user interface for easy model testing
+How to Run:
 
-Handling versioning and error issues (retrained with sklearn 1.7)
+>Clone the repo
+>Install dependencies:
+>>pip install -r requirements.txt
+>Run the Streamlit app:
+>>streamlit run app/app.py
 
-Technologies Used
-Python 3.12
+What I Learned / Possible Improvements:
 
-pandas, matplotlib
-
-scikit-learn (1.7)
-
-xgboost
-
-joblib (for model serialization)
-
-Streamlit (for interactive web deployment)
-
-How to Run
-Clone the repo
-
-Install dependencies:
-
-
->>>pip install -r requirements.txt
-Run the Streamlit app:
-
-
->>>streamlit run app/app.py
-
-What I Learned / Possible Improvements
-Solved sklearn version and model serialization challenges
-
-Built and deployed a full ML pipeline
-
-Created a user-friendly interactive interface
-
-Future improvements: add more features, optimize the model, automate retraining
+-Solved sklearn version and model serialization challenges
+-Built and deployed a full ML pipeline
+-Created a user-friendly interactive interface
+-Future improvements: add more features, optimize the model, automate retraining
