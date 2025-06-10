@@ -1,7 +1,6 @@
 pandas
 matplotlib
-xgboost 
-sklearn
+xgboost
+scikit-learn
 joblib
 streamlit
-os
