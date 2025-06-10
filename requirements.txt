@@ -1,10 +1,7 @@
-Pandas
-matplotlib.pyplot
-XGBoost 
-sklearn.pipeline 
-sklearn.ensemble
-sklearn.metrics
-sklearn.model_selection  
+pandas
+matplotlib
+xgboost 
+sklearn
 joblib
 streamlit
 os
